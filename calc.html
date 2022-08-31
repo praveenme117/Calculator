@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css" />
+  </head>
+
+  <body style="padding-top: 20px">
+    <div class="head">
+     <h4> CALCULATOR</h4>
+    </div>
+
+    <table class="calculator">
+      <tr>
+        <td colspan="3">
+          <input class="display-box" type="text" id="result" disabled style="font-size:20px" />
+        </td>
+
+        <!-- clearScreen() function clears all the values -->
+        <td>
+          <input type="button" value="C" onclick="clearScreen()" id="btn" style="height: 58px;"/>
+        </td>
+      </tr>
+      <tr>
+        <!-- display() function displays the value of clicked button -->
+        <td><input type="button" value="1" onclick="display('1')" style="height: 55px; background-color: #483d8b; font-size:25px" /></td>
+        <td><input type="button" value="2" onclick="display('2')"  class="button-style"  style="height: 55px; background-color: #483d8b; font-size:25px"/></td>
+        <td><input type="button" value="3" onclick="display('3')"  class="button-style"  style="height: 55px; background-color: #483d8b; font-size:25px"/></td>
+        <td><input type="button" value="/" onclick="display('/')"  class="button-style"  style="height: 55px; background-color: #483d8b; font-size:25px"/></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="display('4')"  class="button-style"  style="height: 55px; background-color: #483d8b; font-size:25px"/></td>
+        <td><input type="button" value="5" onclick="display('5')"  class="button-style"  style="height: 55px; background-color: #483d8b; font-size:25px"/></td>
+        <td><input type="button" value="6" onclick="display('6')"  class="button-style"  style="height: 55px; background-color: #483d8b; font-size:25px"/></td>
+        <td><input type="button" value="-" onclick="display('-')"  class="button-style"   style="height: 55px; background-color: #483d8b; font-size:25px"/></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" onclick="display('7')"  class="button-style"  style="height: 55px; background-color: #483d8b; font-size:25px"/></td>
+        <td><input type="button" value="8" onclick="display('8')"  class="button-style"  style="height: 55px; background-color: #483d8b; font-size:25px"/></td>
+        <td><input type="button" value="9" onclick="display('9')"  class="button-style"  style="height: 55px; background-color: #483d8b; font-size:25px"/></td>
+        <td><input type="button" value="+" onclick="display('+')"  class="button-style"  style="height: 55px; background-color: #483d8b; font-size:25px"/></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="." onclick="display('.')"  class="button-style"  style="height: 55px; background-color: #483d8b; font-size:25px"/></td>
+        <td><input type="button" value="0" onclick="display('0')"  class="button-style"  style="height: 55px; background-color: #483d8b;font-size:25px"/></td>
+        <td>
+          <input type="button" value="=" onclick="calculate()"  class="button-class" id="btn"  class="button-style"  style="height: 55px; font-size:25px"/>
+        </td>
+        <td><input type="button" value="*" onclick="display('*')"  class="button-style"  style="height: 55px; background-color: #483d8b; font-size:25px" /></td>
+      </tr>
+    </table>
+
+    <script type="text/javascript" src="calc.js"></script>
+  </body>
+</html>
